@@ -1,0 +1,10 @@
+.yellow_button {
+    width:300px;
+    padding:20px;
+    cursor:pointer;
+    font-weight: bold;
+    background: yellow;
+    color: black;
+    border: 1px;
+    font-size: 100%;
+}
