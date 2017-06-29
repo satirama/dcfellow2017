@@ -20,8 +20,17 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <a class="navbar-brand" href="#">
-                        <img src="http://sailsjs.com/images/logo_sails.png" class="d-inline-block align-top logo" alt="">
+                        <img src="http://sailsjs.com/images/logo_sails.png" class="d-inline-block align-top logo" alt="logo">
                     </a>
+                    <div class="navbar-nav dropdown">
+                        <a class="nav-link dropdown-toggle navtext" href=# id="navbarVersionDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            v0.12
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarVersionDropdownMenu">
+                                <a class="dropdown-item" href="#">v0.12</a>
+                                <a class="dropdown-item" href="#">v0.11</a>
+                            </div>
+                    </div>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-item nav-link navtext" href="#">Get started</a>
@@ -29,14 +38,19 @@
                         <li class="nav-item">
                             <a class="nav-item nav-link navtext" href="#">Support</a>
                         </li>
-                        <li class="nav-item dropdown-menu navtext">
-                            <a class="dropdown-item" href="#">Concepts</a>
-                            <a class="dropdown-item" href="#">Reference</a>
-                            <a class="dropdown-item" href="#">App structure</a>
-                            <a class="dropdown-item" href="#">Upgrading</a>
-                            <a class="dropdown-item" href="#">Contribution guide</a>
-                            <a class="dropdown-item" href="#">Tutorials</a>
-                            <a class="dropdown-item" href="#">Book</a>
+                        <li class="nav-item dropdown navtext">
+                            <a class="nav-link dropdown-toggle navtext" href=# id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Documentation
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Concepts</a>
+                                <a class="dropdown-item" href="#">Reference</a>
+                                <a class="dropdown-item" href="#">App structure</a>
+                                <a class="dropdown-item" href="#">Upgrading</a>
+                                <a class="dropdown-item" href="#">Contribution guide</a>
+                                <a class="dropdown-item" href="#">Tutorials</a>
+                                <a class="dropdown-item" href="#">Book</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-item nav-link navtext" href="#">Studio</a>
@@ -212,7 +226,7 @@
         <div class="container-fluid footer">
             <div class="row">
                 <div class="col-6">
-                    
+                    <img class="logo" alt="logo" src="http://sailsjs.com/images/logo_sails.png">
                 </div>
                 <div class="col-6">
                     <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
