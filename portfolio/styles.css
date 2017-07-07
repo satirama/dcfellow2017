@@ -1,4 +1,4 @@
-/*cambiar foto*/
+/*change picture*/
 .header {
     background-image: url("https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/OYEIB7P371.jpg");
     background-color: #000000;
@@ -8,42 +8,67 @@
 
     height: 660px;
     width: auto;
-    padding-bottom: 100px;
 }
 
-/*cambiar fuentes */
-h1 {
-    text-align: right;
+/*change fonts*/
+div.header h1 {
     color: #111222;
     font-weight: bold;
 }
 
-h2{
-    color: #111222;
-    margin-top: 15px;
+div.bg1 h1 {
+    font-size: 40px;
 }
 
-p{
-    color: #111222;
-    margin-bottom: 10px;
+div.bg2. h1 {
+    font-size: 70px;
 }
 
-div.bg1. .project {
-    color: #111222;
+div.bg2. p {
+    font-size: 55px;
 }
 
-/*cambiar imagenes*/
+/* sections */
+.navbar-trans {
+  background: transparent; 
+}
+
+div.bg1 {
+    background-color: #FBF7F3;
+    color: #111222;
+    padding-top: 16px;
+}
+div.bg2 {
+    background-image: url("http://www.pixeden.com/media/k2/galleries/808/003-texture-background-high-resolution-dirty-grunge-collection-board-pack-vol-3.jpg");
+    background-color: #601b28;
+    background-size: cover;
+    background-repeat: repeat;
+    
+    height: 380px;
+    width: auto;
+
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/*changes pictures*/
 div.bg1 .project .project-img {
     border-radius: 60%;
-    width: 300px;
+    width: 270px;
     margin-top: 15px;
+    margin-bottom: 25px;
 }
 
+/*screen size changes */
 @media (min-width: 768px) {
     div.bg1 {
         padding-top: 80px;
         padding-bottom: 50px;
         padding-left: 120px;
         padding-right: 120px;
+    }
+    div.bg2 {
+        padding-top: 70px;
+        padding-bottom: 50px;
     }
 }
