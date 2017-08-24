@@ -8,13 +8,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class LibroComponent implements OnInit, OnDestroy {
 
-  title: any;
+  book: any;
   private sub: any;
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.sub = this.route.params.subscribe(params => {this.title = params['title'];});  
+    this.sub = this.route.params.subscribe(params => {this.book = params['book'];});  
   }
   
   ngOnDestroy() {
