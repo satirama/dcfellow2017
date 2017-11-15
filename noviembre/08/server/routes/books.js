@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var csv = require('csvtojson');
-var cors = require('cors');
+
 
 /* GET home page. */
 /* Read all */
@@ -20,6 +20,7 @@ router.get('/', function(req, res) {
 // Get authors
 router.get('/authors', function (req, res) {
   var aArr = [];
+  var reps = {};
   csv({
     includeColumns: [7]
   })
@@ -28,9 +29,15 @@ router.get('/authors', function (req, res) {
     if (aArr.indexOf(jObj.authors) < 0){
       aArr.push(jObj.authors);
     }
+    else if (!reps.hasOwnProperty(jObj.authors)){
+      reps[jObj.authors] = 2;
+    }
+    else if (reps.hasOwnProperty(jObj.authors)){
+      reps[jObj.authors] += 1;
+    }
   })
   .on('end', () => {
-    res.json({status:200, authorsArr: aArr});
+    res.json({status:200, authors: aArr, authorsRepeated: reps});
   })
   .on('error', (error) =>{
     res.send({status: 500});

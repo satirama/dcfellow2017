@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AuthorsComponent } from './authors/authors.component';
 
 const routes: Routes = [
   {
     path: '',
     children: []
+  },
+  {
+    path: 'authors',
+    component: AuthorsComponent
   }
 ];
 
