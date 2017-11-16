@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response } from '@angular/http';
+import * as d3 from 'd3';
 
 @Component({
   selector: 'app-authors',
